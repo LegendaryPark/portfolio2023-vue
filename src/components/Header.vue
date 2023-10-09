@@ -16,7 +16,7 @@ import { headerNav } from "../constants";
       >
         <ul>
           <li v-for="(nav, key) in headerNav" :key="key">
-            <a href="#intro">{{ nav.title }}</a>
+            <a :href="nav.url">{{ nav.title }}</a>
           </li>
         </ul>
       </nav>
@@ -50,7 +50,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @import "@/assets/scss/mixin";
 
 #header {
