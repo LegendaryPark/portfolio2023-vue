@@ -6,17 +6,17 @@ import { headerNav } from "../constants";
   <header id="header" role="banner">
     <div class="header__inner">
       <h1 class="header__logo">
-        <a href="#">portfolio<em>vue.js</em></a>
+        <a href="#">JINPARK<em>Portfolio</em></a>
       </h1>
       <nav
         class="header__nav"
         :class="{ show: isNavVisible }"
         role="navigation"
-        aria-label="메인 메뉴"
+        aria-label="main menu"
       >
         <ul>
           <li v-for="(nav, key) in headerNav" :key="key">
-            <a :href="nav.url">{{ nav.title }}</a>
+            <a :href="nav.url" @click="scrollLink($event)">{{ nav.title }}</a>
           </li>
         </ul>
       </nav>
@@ -46,6 +46,16 @@ export default {
     toggleMobileMenu() {
       this.isNavVisible = !this.isNavVisible;
     },
+    scrollLink(event) {
+      event.preventDefault();
+
+      const targetId = event.target.getAttribute("href");
+      const targetElement = document.querySelector(targetId);
+
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: "smooth" });
+      }
+    },
   },
 };
 </script>
@@ -64,7 +74,7 @@ export default {
   padding: 1rem;
 
   .header__logo {
-    font-size: 0.9rem;
+    font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
     line-height: 1;
