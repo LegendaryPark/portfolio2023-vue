@@ -5,7 +5,8 @@ import { introText } from "../constants";
 <template>
   <section id="intro">
     <div class="intro__inner">
-      <h2 class="intro__title">{{ introText.title }}</h2>
+      <h2 class="intro__title">{{ introText.title1 }}</h2>
+      <h2 class="intro__title">{{ introText.title2 }}</h2>
       <div class="intro__lines" aria-hidden="true">
         <span class="line"></span>
         <span class="line"></span>
@@ -22,7 +23,7 @@ import { introText } from "../constants";
           <div>{{ introText.desc[2] }}</div>
         </div>
         <div class="img">
-          <img src="@/assets/img/about.jpg" alt="어바웃" />
+          <img src="@/assets/img/about.jpg" alt="about" />
         </div>
       </div>
       <div class="intro__lines bottom" aria-hidden="true">
@@ -56,7 +57,7 @@ import { introText } from "../constants";
   }
 
   .intro__title {
-    font-size: 10vw;
+    font-size: 9vw;
     text-transform: uppercase;
     line-height: 1;
     font-weight: 800;
