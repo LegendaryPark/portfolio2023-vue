@@ -5,14 +5,21 @@ import { portText } from "@/constants/index";
 <template>
   <section id="port">
     <div class="port__inner">
-      <div class="port__title">portfolio <em>포폴 작업물</em></div>
+      <div class="port__title">portfolio</div>
       <div class="port__wrap">
         <div class="port__item" v-for="(port, key) in portText" :key="key">
           <span class="num">{{ port.num }}.</span>
-          <img :src="port.img" :alt="port.name" />
+          <img class="img" :src="port.img" :alt="port.name" />
           <h3 class="title">{{ port.title }}</h3>
           <p class="desc">{{ port.desc }}</p>
-          <a :href="port.view" target="_blank" class="site">사이트 보기</a>
+          <div class="buttons">
+            <a :href="port.view" v-if="port.view" target="_blank" class="site"
+              >view</a
+            >
+            <a :href="port.code" v-if="port.code" target="_blank" class="site"
+              >code</a
+            >
+          </div>
         </div>
       </div>
     </div>
@@ -85,6 +92,7 @@ export default {
     width: 7000px;
 
     .port__item {
+      position: relative;
       width: 500px;
       height: 70vh;
       background-color: var(--subBg100);
@@ -125,10 +133,11 @@ export default {
         font-size: 2rem;
         font-family: var(--mainNum-font);
       }
+
       .img {
         display: block;
-        margin-top: -20px;
         transition: margin-top 0.3s;
+        border-radius: 10px;
 
         img {
           border-radius: 5px;
@@ -156,17 +165,22 @@ export default {
       .desc {
         font-size: 1rem;
       }
-      .site {
-        border: 1px solid var(--black100);
-        display: block;
-        text-align: center;
-        padding: 0.625rem 1.5rem;
-        margin-top: 1.5rem;
-        transition: all 0.2s;
+      .buttons {
+        position: absolute;
+        bottom: 30px;
 
-        &:hover {
-          background-color: var(--black100);
-          color: var(--white);
+        .site {
+          border: 1px solid var(--black100);
+          text-align: center;
+          padding: 0.625rem 1.5rem;
+          margin-top: 1.5rem;
+          margin-right: 1.5rem;
+          transition: all 0.2s;
+
+          &:hover {
+            background-color: var(--black100);
+            color: var(--white);
+          }
         }
       }
     }

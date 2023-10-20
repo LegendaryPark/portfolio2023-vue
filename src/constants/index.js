@@ -5,6 +5,10 @@ import port04 from "../assets/img/port04.jpg";
 import port05 from "../assets/img/port05.jpg";
 import port06 from "../assets/img/port06.jpg";
 import port07 from "../assets/img/port07.jpg";
+import port08 from "../assets/img/port08.jpg";
+import port09 from "../assets/img/port09.jpg";
+import port10 from "../assets/img/port10.jpg";
+import port11 from "../assets/img/port11.jpg";
 
 export const headerNav = [
   {
@@ -128,32 +132,33 @@ export const portText = [
     num: "04",
     title: "Carte system to measure products",
     desc: "The system measures a product's size with complex parts",
+    stack: ["XAML, WPF, C#, Prisma, Postgres"],
     img: port04,
     view: "https://carte.ca/",
   },
   {
     num: "05",
     title: "Chatbot by ChatGPT",
-    desc: "",
+    desc: "This is a django project that utilize openAI API.",
+    stack: ["django, Python, OpenAI"],
     img: port05,
-    code: "/",
-    view: "https://webstoryboy.github.io/port2023/portfolio-student/TaeyongLee/index.html",
+    code: "https://github.com/LegendaryPark/django-chatbot",
   },
   {
     num: "06",
     title: "Video processing/uploading system",
-    desc: "",
+    desc: "This is a backend project that uploads video processing module to cloud, and processes and uploads a video in cloud",
+    stack: ["NextJS, Typescript, Firebase, Docker, GCP"],
     img: port06,
-    code: "/",
-    view: "https://webstoryboy.github.io/port2023/portfolio-student/TaeyongLee/index.html",
+    code: "https://github.com/LegendaryPark/Youtube-clone",
   },
   {
     num: "07",
     title: "VIN decoder",
-    desc: "",
+    desc: "This is vehicle identification number (VIN) decoder that fetches vehicles' information.",
+    stack: ["FastApi", "Python", "Sqlite"],
     img: port07,
-    code: "/",
-    view: "https://webstoryboy.github.io/port2023/portfolio-student/TaeyongLee/index.html",
+    code: "https://github.com/LegendaryPark/VIN-Decoder",
   },
   {
     num: "08",
@@ -176,6 +181,15 @@ export const portText = [
   {
     num: "10",
     title: "Netflix Clone",
+    stack: [
+      "React",
+      "Tailwind",
+      "Next.JS",
+      "Prisma",
+      "MongoDB",
+      "NextAuth",
+      "Vercel",
+    ],
     desc: "It's a fullstack project. Coming soon!",
     img: port10,
   },
