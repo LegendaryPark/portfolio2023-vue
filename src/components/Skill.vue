@@ -3,7 +3,7 @@ import { skillText } from "@/constants/index";
 </script>
 
 <template>
-  <section id="skill">
+  <section id="motto">
     <div class="skill__inner">
       <h2 class="skill__title">Motto</h2>
       <div class="skill__desc">

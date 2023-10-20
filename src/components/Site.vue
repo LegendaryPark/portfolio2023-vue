@@ -3,7 +3,7 @@ import { achievementText } from "@/constants/index";
 </script>
 
 <template>
-  <section id="site">
+  <section id="achievement">
     <div class="site__inner">
       <h2 class="site__title">Achievements</h2>
       <div class="site__wrap">
