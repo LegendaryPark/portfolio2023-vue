@@ -12,6 +12,7 @@ import { portText } from "@/constants/index";
           <img class="img" :src="port.img" :alt="port.name" />
           <h3 class="title">{{ port.title }}</h3>
           <p class="desc">{{ port.desc }}</p>
+          <span>{{ port.stack }} </span>
           <div class="buttons">
             <a :href="port.view" v-if="port.view" target="_blank" class="site"
               >view</a
@@ -164,6 +165,10 @@ export default {
       }
       .desc {
         font-size: 1rem;
+      }
+
+      .stacks {
+        display: inline;
       }
       .buttons {
         position: absolute;
