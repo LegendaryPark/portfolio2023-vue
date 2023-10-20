@@ -1,13 +1,17 @@
 <script setup>
-import { siteText } from "@/constants/index";
+import { achievementText } from "@/constants/index";
 </script>
 
 <template>
   <section id="site">
     <div class="site__inner">
-      <h2 class="site__title">Site coding <em>나의 작업물</em></h2>
+      <h2 class="site__title">Achievements</h2>
       <div class="site__wrap">
-        <div class="site__item" v-for="(site, key) in siteText" :key="key">
+        <div
+          class="site__item"
+          v-for="(site, key) in achievementText"
+          :key="key"
+        >
           <span class="num">{{ key + 1 }}.</span>
           <div class="text">
             <div>{{ site.text[0] }}</div>
@@ -18,8 +22,7 @@ import { siteText } from "@/constants/index";
             {{ site.title }}
           </h3>
           <div class="btn">
-            <a :href="site.code">code</a>
-            <a :href="site.view">view</a>
+            <a :href="site.view" target="_blank">view</a>
           </div>
           <div class="info">
             <span>{{ site.info[0] }}</span>

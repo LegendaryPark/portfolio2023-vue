@@ -5,7 +5,7 @@ import { skillText } from "@/constants/index";
 <template>
   <section id="skill">
     <div class="skill__inner">
-      <h2 class="skill__title">Challenge <em>나의 도전</em></h2>
+      <h2 class="skill__title">Motto</h2>
       <div class="skill__desc">
         <div v-for="(text, key) in skillText" :key="key">
           <span>{{ key + 1 }}.</span>
