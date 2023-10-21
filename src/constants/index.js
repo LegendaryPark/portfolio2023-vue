@@ -9,10 +9,6 @@ import port08 from "../assets/img/port08.jpg";
 import port09 from "../assets/img/port09.jpg";
 import port10 from "../assets/img/port10.jpg";
 import port11 from "../assets/img/port11.jpg";
-import achieve01 from "../assets/img/achieve01.jpg";
-import achieve02 from "../assets/img/achieve02.jpg";
-import achieve03 from "../assets/img/achieve03.jpg";
-import achieve04 from "../assets/img/achieve04.jpg";
 
 export const headerNav = [
   {
@@ -61,7 +57,6 @@ export const skillText = [
 export const achievementText = [
   {
     text: ["First place", "at AUTCup", "Robotics competition"],
-    img: achieve01,
     title: "Selected as one of 2 participants",
     view: "https://news.umanitoba.ca/a-whole-new-world-computer-science-students-travel-to-iran-for-autcup-robotics-competition/",
     info: [
@@ -72,7 +67,6 @@ export const achievementText = [
   },
   {
     text: ["First place", "at ROBOCUP Robotics competition", "In Montreal"],
-    img: achieve02,
     title: "Handpicked as one of 3 participants",
     view: "https://sci.umanitoba.ca/news/first-place-win-for-students-at-2018-robocup-robotics-competition/",
     info: [
@@ -87,7 +81,6 @@ export const achievementText = [
       "a paper as a first author",
       "regarding Artificial intelligent",
     ],
-    img: achieve03,
     title:
       "Analysis and Prediction of Patterns in Futures Trading Datasets Using LSTM",
     view: "https://ojs.lib.umanitoba.ca/index.php/pmuser/article/view/604",
@@ -99,7 +92,6 @@ export const achievementText = [
   },
   {
     text: ["Finalist", "at Idea competition", "In university of manitoba"],
-    img: achieve04,
     title:
       "How can artificial intelligence assist us in sustainable development?",
     view: "https://news.umanitoba.ca/hear-the-proposed-solutions-from-finalist-teams-at-game-changer-grand-finale/",
