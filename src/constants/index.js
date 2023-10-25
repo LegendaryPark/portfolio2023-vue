@@ -36,7 +36,7 @@ export const headerNav = [
 export const introText = {
   title1: "Passionate",
   title2: "and Creative",
-  desc: ["talent is", "found at the end of the", "effort"],
+  desc: ["Talent is born", "and nurtured through", "effort"],
 };
 
 export const skillText = [
