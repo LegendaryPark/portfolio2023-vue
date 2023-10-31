@@ -9,6 +9,7 @@ import port08 from "../assets/img/port08.jpg";
 import port09 from "../assets/img/port09.jpg";
 import port10 from "../assets/img/port10.jpg";
 import port11 from "../assets/img/port11.jpg";
+import JinParkResumeDark from "../assets/file/JinParkResumeDark.pdf";
 
 export const headerNav = [
   {
@@ -195,11 +196,15 @@ export const portText = [
 
 export const contactText = [
   {
+    link: JinParkResumeDark,
+    title: "Resume",
+  },
+  {
     link: "https://www.linkedin.com/in/jin-park-31169a119/",
-    title: "Linkedin : Jin Park",
+    title: "Linkedin",
   },
   {
     link: 'mailto:"pbjkmn00@gmail.com"',
-    title: "Email : pbjkmn00@gmail.com",
+    title: "pbjkmn00@gmail.com",
   },
 ];
